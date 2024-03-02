@@ -1,0 +1,2 @@
+﻿--Напишете заявка, която извежда производителите на поне два различни
+--персонални компютъра с честота поне 400.SELECT DISTINCT product.makerFROM (pc JOIN pc as p ON pc.code != p.code) JOIN product ON pc.model = product.model AND p.model =  product.modelWHERE pc.speed >= 400

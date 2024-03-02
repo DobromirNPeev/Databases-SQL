@@ -1,0 +1,1 @@
+﻿--Напишете заявка, която извежда имената на всички филми с дължина, поголяма от дължината на филма Star Wars.SELECT MOVIE.TITLEFROM MOVIE, MOVIE AS MWHERE MOVIE.LENGTH > M.LENGTH AND M.TITLE = 'Star Wars'

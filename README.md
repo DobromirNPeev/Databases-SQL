@@ -1,1 +1,1 @@
-Task done during the FMI Course 'Databases'
+Tasks done during the FMI Course 'Databases'

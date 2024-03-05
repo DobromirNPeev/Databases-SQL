@@ -1,0 +1,3 @@
+﻿--Напишете заявка, която извежда имената на продуцентите и имената на
+--филмите за всички филми, които са продуцирани от продуценти с нетни
+--активи по-големи от тези на ‘Merv Griffin’SELECT MOVIEEXEC.NAME,MOVIE.TITLEFROM MOVIEEXEC JOIN MOVIE ON MOVIEEXEC.CERT# = MOVIE.PRODUCERC#WHERE MOVIEEXEC.NETWORTH > (SELECT MOVIEEXEC.NETWORTH						FROM MOVIEEXEC						WHERE MOVIEEXEC.NAME = 'Merv Griffin')

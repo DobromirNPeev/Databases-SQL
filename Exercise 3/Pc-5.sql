@@ -1,0 +1,2 @@
+﻿--Напишете заявка, която извежда производителя на цветния принтер с
+--най-ниска цена.SELECT product.makerFROM product JOIN printer ON product.model = printer.modelWHERE printer.color ='y' AND printer.price < ANY (SELECT p.price														FROM printer AS p													WHERE p.color = 'y')

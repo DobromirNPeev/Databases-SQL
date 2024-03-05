@@ -1,0 +1,2 @@
+﻿--Напишете заявка, която извежда името и класа на корабите с 16 инчови
+--оръдия.SELECT SHIPS.NAME,SHIPS.CLASSFROM SHIPS JOIN (SELECT *				 FROM CLASSES				 WHERE CLASSES.bore = 16) AS c  ON SHIPS.CLASS = c.CLASS

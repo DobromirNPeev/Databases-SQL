@@ -1,0 +1,2 @@
+﻿/*Намерете името, водоизместимостта и годината на пускане на вода на
+всички кораби, които имат същото име като техния клас.*/SELECT SHIPS.NAME,CLASSES.DISPLACEMENT,SHIPS.LAUNCHEDFROM CLASSES JOIN SHIPS ON CLASSES.CLASS = SHIPS.CLASSWHERE CLASSES.CLASS = SHIPS.NAME

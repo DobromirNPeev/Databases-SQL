@@ -1,0 +1,2 @@
+﻿/*Намерете имената на всички кораби с поне 7 оръдия, пуснати на вода
+през 1916, но наречете резултатната колона Ship Name.*/SELECT SHIPS.NAME AS 'Ship Name'FROM CLASSES JOIN SHIPS ON CLASSES.CLASS = SHIPS.CLASSWHERE CLASSES.NUMGUNS >= 7 AND SHIPS.LAUNCHED = 1916

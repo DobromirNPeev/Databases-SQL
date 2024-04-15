@@ -1,0 +1,2 @@
+﻿/*6. Да се изтрият от таблицата Laptop всички лаптопи, направени от производител, който не
+произвежда принтери.*/DELETE FROM laptopWHERE laptop.model IN (SELECT laptop.model	   FROM laptop JOIN product ON laptop.model=product.model	   WHERE product.maker NOT IN (SELECT DISTINCT product.maker									FROM product									WHERE product.type='Printer'))
